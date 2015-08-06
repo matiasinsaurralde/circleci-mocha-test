@@ -2,4 +2,12 @@ var sayHello = function() {
   return 'hello';
 };
 
-module.exports = { sayHello: sayHello };
+var sayGoodbye = function() {
+  return 'goodbye';
+};
+
+var speakFrench = function() {
+  return 'bonjour';
+};
+
+module.exports = { sayHello: sayHello, sayGoodbye: sayGoodbye, speakFrench: speakFrench };

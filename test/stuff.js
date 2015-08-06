@@ -1,7 +1,20 @@
 var expect    = require('chai').expect;
-var converter = require('../app/stuff');
+var stuff = require('../app/stuff');
 
-desribe('stuff module', function() {
+describe('stuff module', function() {
   it( 'says hello', function() {
+    var output = stuff.sayHello();
+    expect( output ).to.equal( 'hello' );
   });
+
+  it( 'says goodbye', function() {
+    var output = stuff.sayGoodbye();
+    expect( output ).to.equal( 'goodbye' );
+  });
+
+  it( 'speaks french', function() {
+    var output = stuff.speakFrench();
+    expect( output ).to.equal( 'bonjour' );
+  });
+
 });
