@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "MOCHA_FILE=$CIRCLE_TEST_REPORTS/test.xml ./node_modules/.bin/mocha --reporter mocha-junit-reporter"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
     "express": "^4.13.3",
     "mocha": "^2.2.5",
     "request": "^2.60.0"
+  },
+  "devDependencies": {
+    "mocha-junit-reporter": "^1.6.1"
   }
 }
