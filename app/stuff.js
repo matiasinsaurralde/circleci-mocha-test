@@ -7,7 +7,7 @@ var sayGoodbye = function() {
 };
 
 var speakFrench = function() {
-  return 'bonjour_';
+  return 'bonjour';
 };
 
 module.exports = { sayHello: sayHello, sayGoodbye: sayGoodbye, speakFrench: speakFrench };
